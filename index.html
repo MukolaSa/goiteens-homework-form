@@ -48,12 +48,61 @@
                 <div class="modal">
                     <button type="button"class="modal-button" data-modal-close></button>
                     <!-- Форма модального вікна -->
-                    <form class="form">
-                        <label for="">Ім'я</label>
-                       <input class="form-field" type="text" name="гusername" id="">
-
-                       <label for="">Ім'я</label>
-                       <input class="form-field" type="tel" name="гusername" id="">
+                    <form class="form js-speaker-form" autocomplete="on">
+                        <h3 class="title">Залиште свої дані, ми Вам зателефонуємо</h3>
+                        <ul class="fields">
+                            <li class="field">
+                                <label for="user-name">Ім'я</label>
+                    <input 
+                       class="form-field" 
+                       type="text" 
+                       name="username"
+                       id="user-name">
+                       <svg class="form-icon" width="18" height="18">
+                        <use href="./img/personf.svg"></use>
+                       </svg>
+                            </li>
+                            <li class="field">
+                                <label for="user-tel">Телефон</label>
+                    <input 
+                       class="form-field" 
+                       type="tel" 
+                       name="user-tel" 
+                       id="user-tel"
+                       autofocus>
+                       <svg class="form-item" width="18" height="18">
+                        <use href="./img/phonef.svg"></use>
+                       </svg>
+                            </li>
+                            <li class="field">
+                                <label for="user-mail">Пошта</label>
+                    <input 
+                       class="form-field" 
+                       type="email"
+                       name="user-mail" 
+                       id="user-mail">
+                       <svg class="form-icon" width="18" height="18">
+                        <use href="./img/email.svg"></use>
+                       </svg>
+                            </li>
+                            <li class="field">
+                    <textarea 
+                       class="textarea" 
+                       name="comments" 
+                       id="comments" 
+                       cols="30" 
+                       rows="10" 
+                       placeholder="Введіть комментар">
+                    </textarea>
+                            </li>
+                        </ul>
+                    <label class="field-label" for="checkbox">
+                        <input type="checkbox" name="checkbox" value="checkbox">
+                        Погоджуюсь з розсилкою і приймаю
+                        <a href="">Умови договору</a>
+                    </label>
+                       <!-- Відправка форми -->
+                       <button class="hero-button btn" type="submit">Надіслати</button>
                     </form>
                 </div>
             </div>
@@ -244,9 +293,8 @@
 </footer> 
 
 
- 
-
 
     <script src="./modal.js"></script>
+    <script src="./form.js"></script>
         </body>
         </html>
